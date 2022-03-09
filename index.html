@@ -1,47 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head> 
-       
-        <link rel="stylesheet" href="style.css" />
-        <title>Personal Website</title>
-    </head>
-    <body> 
-        
-        <h1 class="title">Personal Website</h1>
-    
-       <header>
-        <nav class="header">
-            <div class="name">DarbyBehnken</div>
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-              <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-              <li><a class="active" href="#">Home</a></li>
-              <li><a href="#About">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
+<html>
 
-        <div id="About">
-            <img id="photo" src="nickphoto.JPEG" alt="Picture of me by a waterfall">
-            <script src="index.js"></script>
-            <h2>^Click the photo above me^</h2>
-            <p class="disclaimer">I am into</p>
-            <ul class="Into">
-                <li>Photography</li>
-                <li>Cliff Diving</li>
-                <li>Sky Diving</li>
-                <li>Camping</li>
-                <li>Gaming</li>
-                <li>And Anything That Gives Me Adrenaline</li>
-            </ul>
-        </div>
+<head>
+  <title>Travel Destination</title>
+  <link rel="stylesheet" href="index.css">
+  
+</head>
 
-        <div>
-            <h2 id="closing">I am excided to begin my coding carrer</h2>
-            <p class="closer">I think that pretty much wraps it up for me, until next time, its been real.</p>
-        </div>
-    </body>
+<body>
+  <div id="titleAndBackground">
+    <style>
+      body {
+        background-image: url(http://cdn.cnn.com/cnnnext/dam/assets/181010131059-australia-best-beaches-cossies-beach-cocos3.jpg);
+      }
+    </style>
+    <h1 id="travelTitle">Welcome to Travel Ratings</h1>
+    <h3 id="subtitle">Your Destination Awaits</h3>
+  </div>
+
+  <div id="Destination-form-container">
+    <form id="destination-form">
+      <label class="form-label"><strong>Name: </strong></label>
+      <input type="text" id="name-input" />
+
+      <label class="form-label"><strong>Image: </strong></label>
+      <input type="text" id="img-input" />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+
+  <!-- <div id="comment-form-container">
+    <form id="comment-form">
+      <label class="form-label"><strong>Comment: </strong></label>
+      <input type="text" id="comment-input" />
+      <input type="submit" value="Submit" />
+    </form>
+  </div> -->
+
+  <div id="container-location"> </div>
+<script src="index.js"></script>
+</body>
+
 </html>
